@@ -66,7 +66,7 @@
 
 _FPS_
 
-> 内存模型
+> 内存模型和内存分配
 
 
 ## Network
@@ -91,16 +91,45 @@ URLs过滤语法：
 
 _HAR文件_
 
-> 弱网测试
+> 离线和弱网测试
 
 
 ## Memory
 
 ## Application 
 
+> manifest & service workers
+
+```json
+{
+  "name":"",
+  "short_name""",
+  "start_url":"",
+  "description":"",
+  "icons":[
+    {
+      "type":"",
+      "sizes":""
+    }
+
+  ]
+
+}
+
+```
+
 ### Local Storage
 
 ### Session Storage
+
+### IndexedDB
+
+```js
+
+
+```
+
+### WebSQL
 
 ### Cookies
 
@@ -130,6 +159,7 @@ _HAR文件_
 
 ## Sensors
 
+## Security
 
 
 
