@@ -43,6 +43,8 @@
 
 > document.cookie
 
+> console.log('%c Chrome Devtools', 'background-color:#000; color:#ff0; padding:5px;')
+
 
 ```
 
@@ -59,6 +61,21 @@
 
 快速打开指定文件: `ctrl + p`
 
+### source map
+
+```json
+{
+  "version": 3,
+  "file":"",
+  "mappings":"",
+  "sources":[],
+  "sourcesContent":[],
+  "x_google_ignoreList":[]
+}
+
+```
+
+> javascript snippets
 
 ## Performance
 
@@ -91,7 +108,7 @@ URLs过滤语法：
 
 _HAR文件_
 
-> 离线和弱网测试
+> 离线和弱网测试、覆盖和新添HTTP响应头字段
 
 
 ## Memory
@@ -142,6 +159,8 @@ _HAR文件_
 ## Rendering
 
 监控页面重绘
+
+- [ ]  Emulate a focused page
 
 ## Coverage 
 
