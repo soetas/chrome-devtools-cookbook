@@ -8,6 +8,8 @@
 
 快速选择元素：`shift + ctrl + c`
 
+快速隐藏选择的DOM节点: `H`
+
 自动化脚本的元素定位： 
 
 - 文本查询
@@ -31,9 +33,13 @@
 
 > $_ 
 
-> $n
+> $0
 
 > $("selector")
+
+> $$("selector")
+
+> console.dir()
 
 > console.table()
 
@@ -43,12 +49,29 @@
 
 > document.cookie
 
-> console.log('%c Chrome Devtools', 'background-color:#000; color:#ff0; padding:5px;')
+> copy()
 
+> console.log('%c Chrome Devtools', 'background-color:#000; color:#ff0; padding:5px;')
 
 ```
 
 日志级别(log level): Verbose、Warnings、Errors和Info
+
+Javascript错误类型:
+
+- `TypeError`
+- `RangeError`
+- `ReferenceError`
+- `SyntaxError`
+
+node调试:
+
+```sh
+node --inspect-brk ***.js
+
+```
+
+> live expression 
 
 
 ## Sources
@@ -60,6 +83,8 @@
 > 编辑源文件并同步到本地文件
 
 快速打开指定文件: `ctrl + p`
+
+> Snippets
 
 ### source map
 
