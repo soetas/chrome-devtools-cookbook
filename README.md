@@ -33,7 +33,7 @@
 
 > $_ 
 
-> $0
+> $0 | $1 | $2 | $3 | $4
 
 > $("selector")
 
@@ -47,11 +47,15 @@
 
 > console.time()
 
+> console.timeEnd()
+
 > document.cookie
 
 > copy()
 
 > console.log('%c Chrome Devtools', 'background-color:#000; color:#ff0; padding:5px;')
+
+> navigator.onLine
 
 ```
 
@@ -72,6 +76,8 @@ node --inspect-brk ***.js
 ```
 
 > live expression 
+
+Chrome浏览器扩展插件: **console importer**
 
 
 ## Sources
