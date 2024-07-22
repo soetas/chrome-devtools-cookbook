@@ -2,7 +2,14 @@
 
 命令菜单快捷键: `shift + ctrl + p`
 
-> 截屏(screenshot)
+> 截图(screenshot)
+
+命令行启动chrome浏览器:
+
+```sh
+start chrome --auto-open-devtools-for-tabs
+
+```
 
 ## Elements
 
@@ -20,11 +27,24 @@
 
 快速定位元素: `ctrl + f`
 
-> 元素断点调试类型：__子树节点修改__、__节点属性修改__ 和 __节点移除__
+> DOM元素断点调试类型：__子树节点修改__、__节点属性修改__ 和 __节点移除__
+
+```css
+@container body {
+
+}
+
+@supports {
+  
+}
+
+```
 
 ## Console
 
-启动快捷键: `shift + ctrl + i`
+启动快捷键: `shift + ctrl + j`
+
+存储所选择的DOM元素为全局变量
 
 定位元素:
 
@@ -45,6 +65,8 @@
 
 > console.group()
 
+> console.debug()
+
 > console.time()
 
 > console.timeEnd()
@@ -56,6 +78,12 @@
 > console.log('%c Chrome Devtools', 'background-color:#000; color:#ff0; padding:5px;')
 
 > navigator.onLine
+
+> getEventListeners()
+
+> monitorEvents()
+
+> queryObjects()
 
 ```
 
@@ -75,7 +103,7 @@ node --inspect-brk ***.js
 
 ```
 
-> live expression 
+> 实时表达式(live expression)
 
 Chrome浏览器扩展插件: **console importer**
 
@@ -89,8 +117,6 @@ Chrome浏览器扩展插件: **console importer**
 > 编辑源文件并同步到本地文件
 
 快速打开指定文件: `ctrl + p`
-
-> Snippets
 
 ### source map
 
@@ -106,7 +132,17 @@ Chrome浏览器扩展插件: **console importer**
 
 ```
 
-> javascript snippets
+> 代码片段(javascript snippets)
+
+断点类型: 
+
+1. 条件断点
+2. 单行断点
+3. 日志断点
+4. DOM断点
+5. xhr/fetch断点
+6. 事件监听器断点
+7. 未捕获/捕获异常断点
 
 ## Performance
 
@@ -119,7 +155,7 @@ _FPS_
 
 ## Network
 
-可用选项: 持续记录、保留日志、禁用缓存和网速模式
+可用选项: 阻塞请求、持续记录、保留日志、禁用缓存和网速模式
 
 URLs过滤语法：
 
