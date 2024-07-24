@@ -64,11 +64,15 @@ start chrome --auto-open-devtools-for-tabs
 > console.table()
 
 > console.group()
+> console.groupEnd()
 
 > console.debug()
 
-> console.time()
+> console.trace()
 
+> console.assert()
+
+> console.time()
 > console.timeEnd()
 
 > document.cookie
